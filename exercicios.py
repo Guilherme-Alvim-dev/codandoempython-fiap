@@ -90,7 +90,7 @@ elif media >= 4.0 and media < 6:
     print("Aluno recuperação")
 else:
     print("Aluno aprovado")
-'''
+
 print("MENU")
 print("1_SOMAR")
 print("2_SUBTRAIR"
@@ -103,3 +103,5 @@ match escolha:
         num_2 = float(input("Insira o segundo: "))
         cal = (num_1) + (num_2)
     print(cal)
+'''
+nome = (executor_electric)
