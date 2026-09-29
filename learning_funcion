@@ -1,0 +1,28 @@
+def calcular_media(soma_valores, quantidade):
+    media = soma_valores / quantidade
+    return media
+
+def soma(a, b):
+    return a + b
+
+#main
+a = float(input("Digite sua nota: "))
+b = float(input("Digite sua segunda nota: "))
+cont = 2
+
+# Criamos uma variável para guardar a soma total acumulada
+soma_total = soma(a, b)
+
+while True:
+    resp = input("Deseja adicionar mais notas?: s ou n ")
+
+    if resp == "s":
+        nova_nota = float(input("Qual sua nota? "))
+        cont += 1
+        # Somamos a nova nota ao total acumulado
+        soma_total = soma(soma_total, nova_nota)
+    else:
+        # Correção do nome da função para calcular_media
+        media_final = calcular_media(soma_total, cont)
+        print(f"A média de todas as notas é: {media_final}")
+        break
